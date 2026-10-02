@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f7fb;
+}
+
+/* LOGIN */
+.login-box {
+    width: 300px;
+    margin: 120px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+}
+
+.login-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.login-box button {
+    padding: 10px;
+    width: 95%;
+    background: #0b3d2e;
+    color: white;
+    border: none;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    background: #0b3d2e;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #145c43;
+}
+
+.user {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* MAIN */
+.main {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px #ddd;
+}

@@ -1,0 +1,392 @@
+/* =========================================
+   ROOT COLORS
+========================================= */
+
+:root{
+
+    --fb-blue:#2A276D;
+    --fb-yellow:#EFAB35;
+    --fb-green:#43760F;
+    --fb-lightgreen:#A6C297;
+    --fb-lightgray:#DEE7EA;
+    --fb-black:#0F0E0D;
+
+}
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--fb-lightgray);
+    color:#222;
+
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar-custom{
+
+    background:var(--fb-blue);
+    padding:15px 40px;
+
+}
+
+.navbar-brand{
+
+    color:white !important;
+    font-size:24px;
+    font-weight:700;
+
+}
+
+.nav-link{
+
+    color:white !important;
+    margin-left:15px;
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--fb-yellow) !important;
+
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header{
+
+    background:linear-gradient(
+        135deg,
+        var(--fb-blue),
+        #4441a0
+    );
+
+    color:white;
+    padding:40px;
+    border-radius:18px;
+    margin-top:25px;
+    margin-bottom:25px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+.page-header h1{
+
+    font-size:38px;
+    font-weight:700;
+
+}
+
+.page-header p{
+
+    margin-top:10px;
+    opacity:0.9;
+
+}
+
+/* =========================================
+   DASHBOARD CARDS
+========================================= */
+
+.stats-card{
+
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    transition:.3s;
+    height:100%;
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.stats-card h2{
+
+    color:var(--fb-blue);
+    font-weight:700;
+    font-size:32px;
+
+}
+
+.stats-card p{
+
+    margin-top:8px;
+    color:#666;
+
+}
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.main-card{
+
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+
+}
+
+.main-card-header{
+
+    background:var(--fb-blue);
+    color:white;
+    padding:18px 25px;
+    font-size:22px;
+    font-weight:600;
+
+}
+
+.main-card-body{
+
+    padding:25px;
+
+}
+
+/* =========================================
+   FORMS
+========================================= */
+
+label{
+
+    font-weight:600;
+    color:var(--fb-blue);
+    margin-bottom:6px;
+
+}
+
+.form-control,
+.form-select{
+
+    border-radius:10px;
+    padding:12px;
+    border:1px solid #ccc;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:var(--fb-blue);
+
+    box-shadow:
+    0 0 0 0.2rem
+    rgba(42,39,109,0.2);
+
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn-custom-primary{
+
+    background:var(--fb-blue);
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-weight:600;
+
+}
+
+.btn-custom-primary:hover{
+
+    background:#1c1957;
+    color:white;
+
+}
+
+.btn-custom-success{
+
+    background:var(--fb-green);
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-weight:600;
+
+}
+
+.btn-custom-success:hover{
+
+    background:#2f520b;
+    color:white;
+
+}
+
+.btn-custom-warning{
+
+    background:var(--fb-yellow);
+    color:black;
+    border:none;
+
+}
+
+.btn-custom-danger{
+
+    background:var(--fb-black);
+    color:white;
+    border:none;
+
+}
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+.custom-table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+.custom-table thead{
+
+    background:var(--fb-blue);
+    color:white;
+
+}
+
+.custom-table th,
+.custom-table td{
+
+    padding:15px;
+    border:1px solid #ddd;
+
+}
+
+.custom-table tbody tr:nth-child(even){
+
+    background:#f7f7f7;
+
+}
+
+.custom-table tbody tr:hover{
+
+    background:#eef3f4;
+
+}
+
+/* =========================================
+   BADGES
+========================================= */
+
+.badge-premium{
+
+    background:var(--fb-yellow);
+    color:black;
+    padding:7px 15px;
+    border-radius:30px;
+    font-size:12px;
+
+}
+
+.badge-standard{
+
+    background:var(--fb-green);
+    color:white;
+    padding:7px 15px;
+    border-radius:30px;
+    font-size:12px;
+
+}
+
+.badge-reject{
+
+    background:var(--fb-black);
+    color:white;
+    padding:7px 15px;
+    border-radius:30px;
+    font-size:12px;
+
+}
+
+/* =========================================
+   REPORT BOX
+========================================= */
+
+.report-box{
+
+    background:white;
+    border-left:8px solid var(--fb-blue);
+    padding:25px;
+    border-radius:16px;
+    margin-bottom:20px;
+
+    box-shadow:
+    0 5px 18px
+    rgba(0,0,0,0.08);
+
+}
+
+.report-box h4{
+
+    color:var(--fb-blue);
+    font-weight:700;
+
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer{
+
+    background:var(--fb-blue);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:768px){
+
+    .page-header h1{
+
+        font-size:28px;
+
+    }
+
+    .navbar-custom{
+
+        padding:15px;
+
+    }
+
+}
